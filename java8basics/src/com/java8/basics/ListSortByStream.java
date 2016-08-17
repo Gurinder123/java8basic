@@ -1,4 +1,4 @@
-package java8basics;
+package com.java8.basics;
 
 
 

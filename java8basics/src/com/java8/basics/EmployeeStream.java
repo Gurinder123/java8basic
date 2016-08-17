@@ -1,4 +1,4 @@
-package master.master123;
+package com.java8.basics;
 
 import java.util.ArrayList;
 import java.util.Collections;
