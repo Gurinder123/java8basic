@@ -67,16 +67,6 @@ class Employee {
 
 
     @Override
-    public boolean equals(Object o) {
-        return false;
-    }
-
-    @Override
-    public int hashCode() {
-        return 15;
-    }
-
-    @Override
     public String toString() {
         return "Employee{" +
                 "name='" + name + '\'' +
