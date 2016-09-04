@@ -1,5 +1,7 @@
 package com.java8.basics.customFunctionalInterfaces;
 
+import com.java8.basics.Apple;
+
 import java.util.ArrayList;
 import java.util.List;
 

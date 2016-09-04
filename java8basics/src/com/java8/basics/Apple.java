@@ -1,4 +1,4 @@
-package com.java8.basics.customFunctionalInterfaces;
+package com.java8.basics;
 
 /**
  * Created by gurinder on 4/9/16.
