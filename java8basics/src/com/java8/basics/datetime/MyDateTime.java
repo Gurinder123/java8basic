@@ -1,7 +1,10 @@
 package com.java8.basics.datetime;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.Month;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoField;
 import java.time.temporal.TemporalField;
 
@@ -14,7 +17,8 @@ public class MyDateTime {
         System.out.println(localDate.getDayOfMonth() + "-" + localDate.getMonthValue() + "-" + localDate.getYear());
         LocalTime localTime = LocalTime.now();
         System.out.println(localTime.getHour() + ":" + localTime.getMinute() + ":" + localTime.getSecond());
-//        TemporalField field = ChronoField.YEAR;
-//        System.out.println(localTime.get(field));
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        LocalDateTime myLocalDateTime = LocalDateTime.of(1991, Month.MARCH, 22, 0,0);
+        System.out.println(myLocalDateTime.format(formatter));
     }
 }
