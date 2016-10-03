@@ -5,8 +5,6 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Month;
 import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoField;
-import java.time.temporal.TemporalField;
 
 /**
  * Created by gurinder on 30/9/16.
@@ -18,7 +16,7 @@ public class MyDateTime {
         LocalTime localTime = LocalTime.now();
         System.out.println(localTime.getHour() + ":" + localTime.getMinute() + ":" + localTime.getSecond());
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
-        LocalDateTime myLocalDateTime = LocalDateTime.of(1991, Month.MARCH, 22, 0,0);
+        LocalDateTime myLocalDateTime = LocalDateTime.of(1991, Month.MARCH, 22, 0, 0);
         System.out.println(myLocalDateTime.format(formatter));
     }
 }
